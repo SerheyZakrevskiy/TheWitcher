@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Familjen+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-couch-icon"
+      sizes="180x180"
+      href="/assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/assets/images/favicon/site.manifest" />
+  </head>
+  <body>
+    <section class="section section-main">
+      <div class="container">
+        <header class="header flex">
+          <div class="header-menu flex">
+            <div class="header-menu__button">
+              <span></span>
+            </div>
+            <nav class="header-menu__list">
+              <ul class="flex flex-center">
+                <li>
+                  <a
+                    data-text="editions"
+                    class="header-menu__link menu-link"
+                    href="#editions"
+                  >
+                    editions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    data-text="controller"
+                    class="header-menu__link menu-link"
+                    href="#controller"
+                    >controller</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="header-menu__link menu-link"
+                    href="#about"
+                    data-text="about"
+                    >about</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="header-menu__link menu-link"
+                    href="#explore"
+                    data-text="explore"
+                    >explore</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="header-menu__link menu-link"
+                    data-text="news"
+                    href="#news"
+                    >news</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="header-menu__link menu-link"
+                    data-text="faq"
+                    href="#faq"
+                    >faq</a
+                  >
+                </li>
+                <li>
+                  <div class="header-menu__link lang">
+                    <span class="current-lang">english</span>
+                    <svg
+                      style="color: white"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chevron-down"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                    <div class="header-menu__languages">
+                      <div
+                        class="header-menu__language language"
+                        data-lang="ukr"
+                      >
+                        Український
+                      </div>
+                      <div
+                        class="header-menu__language language"
+                        data-lang="en"
+                      >
+                        English
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-timer flex flex-center">
+            <span data-text="release">Release:</span>
+            <div class="header-timer__values flex flex-center">
+              <div class="header-timer__items">
+                <div class="header-timer__item-value" id="year">0</div>
+                <div class="header-timer__item-info">Y</div>
+              </div>
+              <div class="header-timer__items">
+                <div class="header-timer__item-value" id="month">0</div>
+                <div class="header-timer__item-info">M</div>
+              </div>
+              <div class="header-timer__items">
+                <div class="header-timer__item-value" id="days">0</div>
+                <div class="header-timer__item-info">D</div>
+              </div>
+              <div class="header-timer__items">
+                <div class="header-timer__item-value" id="hours">0</div>
+                <div class="header-timer__item-info">H</div>
+              </div>
+              <div class="header-timer__items">
+                <div class="header-timer__item-value" id="minutes">0</div>
+                <div class="header-timer__item-info">M</div>
+              </div>
+              <div class="header-timer__items">
+                <div class="header-timer__item-value" id="seconds">0</div>
+                <div class="header-timer__item-info">S</div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="description">
+          <div class="description-title">
+            <h1>The Wither IV</h1>
+            <div class="description-subtitle">
+              Witcher is not just a series of games, but a story - showing the
+              path of development and maturation of CD Projekt RED. A path on
+              which I had to overcome many difficulties, where I had to work
+              long and hard in order to finally reach the intended goal.
+            </div>
+            <div class="description-button buy-button" data-value="0">
+              <span>Buy now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section hidden section-editions" id="editions">
+      <div class="container">
+        <div class="editions">
+          <h2 data-text="editions">Editions</h2>
+          <div class="editions-list">
+            <div class="editions-item">
+              <div
+                class="editions-item__img"
+                style="background-image: url(./assets/images/card1.jpg)"
+              ></div>
+              <div class="editions-item__title">Standart Editions</div>
+              <div class="editions-item__subtitle">PS5</div>
+              <ul class="editions-item__description">
+                <li>Offline play enabled</li>
+                <li>Remote Play supported</li>
+                <li>Trigger effect required</li>
+              </ul>
+              <div class="editions-item__price">19.99$</div>
+              <div class="editions-item_btn buy-button" data-value="1">
+                buy now
+              </div>
+            </div>
+            <div class="editions-item">
+              <div
+                class="editions-item__img"
+                style="background-image: url(./assets/images/card2.jpg)"
+              ></div>
+              <div class="editions-item__title">Standart Editions</div>
+              <div class="editions-item__subtitle">PS4</div>
+              <ul class="editions-item__description">
+                <li>Offline play enabled</li>
+                <li>Remote Play supported</li>
+                <li>Trigger effect required</li>
+              </ul>
+              <div class="editions-item__price">18.99$</div>
+              <div class="editions-item_btn buy-button" data-value="1">
+                buy now
+              </div>
+            </div>
+            <div class="editions-item">
+              <div
+                class="editions-item__img"
+                style="background-image: url(./assets/images/card3.jpg)"
+              ></div>
+              <div class="editions-item__title">Digital Deluxe Edition</div>
+              <div class="editions-item__subtitle">PS5</div>
+              <ul class="editions-item__description">
+                <li>All features of Standdart Edition</li>
+                <li>Darkdale Amour</li>
+                <li>Official digital soundtrack</li>
+              </ul>
+              <div class="editions-item__price">29.99$</div>
+              <div class="editions-item_btn buy-button" data-value="2">
+                buy now
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section hidden section-dual" id="controller">
+      <div class="container">
+        <h2>DualSense</h2>
+        <div class="dual flex flex-center">
+          <div class="dual-description">
+            <p>
+              You can also buy an exclusive controller with the
+              <span class="violet">The Withcer </span> theme for PS5
+            </p>
+            <p>
+              If you purchase a controller and a game (any edition), you will
+              receive a <span class="orange">%15</span> discount on two items.
+            </p>
+            <div class="dual-description__info flex">
+              <div class="dual-description__price">35.99$</div>
+              <div class="dual-description__button buy-button" data-value="3">
+                Buy DualSense with a game
+              </div>
+            </div>
+          </div>
+          <div class="dual-img">
+            <img src="./assets/images/controller.png" alt="Controller" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section hidden section-about" id="about">
+      <h2>About Game</h2>
+      <div class="video">
+        <div class="video-info">
+          <div class="video-title">Watch The Trailer</div>
+          <div class="video-btn">Play</div>
+        </div>
+        <video
+          autoplay
+          id="video"
+          src="./assets/images/trailerWitcher.mp4"
+          poster="/src/assets/images/The-Witcher-3-Wallpaper-HD-scaled.jpg"
+        ></video>
+      </div>
+    </section>
+    <section class="section hidden section-explore" id="explore">
+      <div class="container">
+        <h2>Explore The Wither series</h2>
+        <div class="explore-items">
+          <div class="explore-item">
+            <h3>Here are The witcher IV (PC) System Requirements</h3>
+            <div class="explore-switch flex flex-center">
+              <div
+                class="explore-switch__title active"
+                data-requirements="minimum"
+              >
+                Minimum
+              </div>
+              <div class="explore-switch__checkbox">
+                <input type="checkbox" name="requirements" class="checkbox" />
+                <span></span>
+              </div>
+              <div
+                class="explore-switch__title"
+                data-requirements="recommended"
+              >
+                Recommended
+              </div>
+            </div>
+            <div class="explore-info flex flex-center">
+              <div class="explore-img">
+                <div
+                  class="explore-img__wrap"
+                  style="background-image: url(./assets/images/bg-card1.png)"
+                >
+                  <img src="./assets/images/CiriPng.png" alt="" />
+                </div>
+              </div>
+              <div class="explore-description">
+                <ul class="explore-list active" id="minimum">
+                  <li>
+                    <span class="violet">CPU</span>: Intel i5-2500k (4 core 3.3
+                    GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)
+                  </li>
+                  <li><span class="violet">RAM</span>: 8 GB</li>
+                  <li><span class="violet">OS</span>: Windows 10 64-bit</li>
+                  <li>
+                    <span class="violet">VIDEOCARD</span>: NVIDIA GTX 960 (4 GB)
+                    or AMD R9 290X (4 GB)
+                  </li>
+                  <li><span class="violet">PIXEL SHADER</span>: 5.1</li>
+                  <li><span class="violet">VERTEX SHADER</span>: 5.1</li>
+                  <li><span class="violet">FREE DISK SPACE</span>70 GB</li>
+                  <li><span class="violet">DEDICATED VIDEO RAM</span>4 GB</li>
+                </ul>
+                <ul class="explore-list" id="recommended">
+                  <li>
+                    <span class="violet">CPU</span>: Intel i7-4500k (4 core 3.3
+                    GHz) or AMD Ryzen 4 2200 (4 core 3.7 GHz)
+                  </li>
+                  <li><span class="violet">RAM</span>: 12 GB</li>
+                  <li><span class="violet">OS</span>: Windows 10 64-bit</li>
+                  <li>
+                    <span class="violet">VIDEOCARD</span>: NVIDIA GTX 1260 (8
+                    GB) or AMD R9 340X (8 GB)
+                  </li>
+                  <li><span class="violet">PIXEL SHADER</span>: 6</li>
+                  <li><span class="violet">VERTEX SHADER</span>: 6</li>
+                  <li><span class="violet">FREE DISK SPACE</span>70 GB</li>
+                  <li><span class="violet">DEDICATED VIDEO RAM</span>4 GB</li>
+                </ul>
+                <div class="explore-button buy-button" data-value="2">
+                  Buy now
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="explore-item">
+            <h3>The Witcher for PS</h3>
+            <div class="explore-switch flex flex-center">
+              <div
+                class="explore-switch__title active"
+                data-versions="standard"
+              >
+                Standard
+              </div>
+              <div class="explore-switch__checkbox">
+                <input type="checkbox" name="versions" class="checkbox" />
+                <span></span>
+              </div>
+              <div class="explore-switch__title" data-versions="limited">
+                Limited
+              </div>
+            </div>
+            <div class="explore-item__price">15.99$</div>
+            <div class="explore-info flex flex-center reverse">
+              <div class="explore-img">
+                <div
+                  class="explore-img__wrap"
+                  style="background-image: url(./assets/images/bg-card2.jpg)"
+                >
+                  <img src="./assets/images/Geraltpng2.png" alt="" />
+                </div>
+              </div>
+              <div class="explore-description">
+                <ul class="explore-list" id="standard">
+                  <li><span class="violet">Platform</span>: PS4</li>
+                  <li><span class="violet">Premiere</span>: 10.12.2024</li>
+                  <li>
+                    <span class="violet">Publisher</span>: Sony Interective
+                    Entertaiment Europe
+                  </li>
+                  <li>
+                    <span class="violet">Species</span>: Action, Adventure
+                  </li>
+                  <li>
+                    <span class="violet">Voice</span
+                    >English,Ukrainian,Germany,Polish
+                  </li>
+                  <li>
+                    <span class="violet">Display Languages</span
+                    >English,Ukrainian,Germany,Polish,Iran,China
+                  </li>
+                </ul>
+                <ul class="explore-list active" id="limited">
+                  <li><span class="violet">Platform</span>: PS5</li>
+                  <li><span class="violet">Premiere</span>: 10.12.2024</li>
+                  <li>
+                    <span class="violet">Publisher</span>: Sony Interective
+                    Entertaiment Europe
+                  </li>
+                  <li>
+                    <span class="violet">Species</span>: Action, Adventure
+                  </li>
+                  <li>
+                    <span class="violet">Voice</span
+                    >English,Ukrainian,Germany,Polish
+                  </li>
+                  <li>
+                    <span class="violet">Display Languages</span
+                    >English,Ukrainian,Germany,Polish,Iran,China,Indonezia,Cydan
+                  </li>
+                </ul>
+                <div class="explore-button buy-button" data-value="1">
+                  Buy now
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hidden section-news" id="news">
+      <h2>news</h2>
+      <div class="news swiper flex flex-center">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide news-item">
+            <div class="news-item__info flex">
+              <div class="news-item__subtitle">The Wither IV</div>
+              <div class="news-item__date">01/10/2023</div>
+            </div>
+            <div class="news-item__title">
+              Will receive a large update on Release
+            </div>
+            <div class="news-item__description flex flex-center">
+              <div
+                class="news-item__img"
+                style="background-image: url(./assets/images/news1.png)"
+              ></div>
+              <div class="news-item__text flex">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores eum quisquam amet laudantium officiis, nam explicabo
+                  ipsam, corporis animi deserunt error non quaerat saepe
+                  incidunt, hic sint aliquid doloremque ratione tempora?
+                  Officiis, quisquam magni.
+                </p>
+                <a href="#" class="news-item_button">Read</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide news-item">
+            <div class="news-item__info flex">
+              <div class="news-item__subtitle">The Wither IV</div>
+              <div class="news-item__date">01/10/2023</div>
+            </div>
+            <div class="news-item__title">
+              Will receive a large update on Release
+            </div>
+            <div class="news-item__description flex flex-center">
+              <div
+                class="news-item__img"
+                style="background-image: url(./assets/images/news2.png)"
+              ></div>
+              <div class="news-item__text flex">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores eum quisquam amet laudantium officiis, nam explicabo
+                  ipsam, corporis animi deserunt error non quaerat saepe
+                  incidunt, hic sint aliquid doloremque ratione tempora?
+                  Officiis, quisquam magni.
+                </p>
+                <a href="#" class="news-item__button">Read</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide news-item">
+            <div class="news-item__info flex">
+              <div class="news-item__subtitle">The Wither IV</div>
+              <div class="news-item__date">01/10/2023</div>
+            </div>
+            <div class="news-item__title">
+              Will receive a large update on Release
+            </div>
+            <div class="news-item__description flex flex-center">
+              <div
+                class="news-item__img"
+                style="background-image: url(./assets/images/news3.jpg)"
+              ></div>
+              <div class="news-item__text flex">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores eum quisquam amet laudantium officiis, nam explicabo
+                  ipsam, corporis animi deserunt error non quaerat saepe
+                  incidunt, hic sint aliquid doloremque ratione tempora?
+                  Officiis, quisquam magni.
+                </p>
+                <a href="#" class="news-item__button">Read</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide news-item">
+            <div class="news-item__info flex">
+              <div class="news-item__subtitle">The Wither IV</div>
+              <div class="news-item__date">01/10/2023</div>
+            </div>
+            <div class="news-item__title">
+              Will receive a large update on Release
+            </div>
+            <div class="news-item__description flex flex-center">
+              <div
+                class="news-item__img"
+                style="background-image: url(./assets/images/news4.jpg)"
+              ></div>
+              <div class="news-item__text flex">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores eum quisquam amet laudantium officiis, nam explicabo
+                  ipsam, corporis animi deserunt error non quaerat saepe
+                  incidunt, hic sint aliquid doloremque ratione tempora?
+                  Officiis, quisquam magni.
+                </p>
+                <a href="#" class="news-item__button">Read</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-button flex flex-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <g data-name="91-Arrow Left">
+              <path
+                d="M16 32a16 16 0 1 1 16-16 16 16 0 0 1-16 16zm0-30a14 14 0 1 0 14 14A14 14 0 0 0 16 2z"
+              />
+              <path
+                d="m18.29 24.71-8-8a1 1 0 0 1 0-1.41l8-8 1.41 1.41L12.41 16l7.29 7.29z"
+              />
+            </g>
+          </svg>
+        </div>
+
+        <div class="swiper-button-next swiper-button flex flex-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <g data-name="91-Arrow Left">
+              <path
+                d="M16 32a16 16 0 1 1 16-16 16 16 0 0 1-16 16zm0-30a14 14 0 1 0 14 14A14 14 0 0 0 16 2z"
+              />
+              <path
+                d="m18.29 24.71-8-8a1 1 0 0 1 0-1.41l8-8 1.41 1.41L12.41 16l7.29 7.29z"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="section hidden section-faq" id="faq">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq-items flex">
+          <div class="faq-item">
+            <div class="faq-item__header flex">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <span class="flex flex-center"></span>
+            </div>
+            <div class="faq-item__content">
+              <p>
+                The wither 4 will release on <span>November 23 2024</span>Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Quos enim
+                doloremque esse inventore.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item__header flex">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <span class="flex flex-center"></span>
+            </div>
+            <div class="faq-item__content">
+              <p>Yes of cource</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item__header flex">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <span class="flex flex-center"></span>
+            </div>
+            <div class="faq-item__content">
+              <p>
+                The wither 4 will release on <span>November 23 2024</span>Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Quos enim
+                doloremque esse inventore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top flex">
+          <ul class="footer-menu flex flex-center">
+            <li>
+              <a class="menu-link" href="#editions" data-text="editions"
+                >editions</a
+              >
+            </li>
+            <li>
+              <a class="menu-link" href="#controller" data-text="controller"
+                >controller</a
+              >
+            </li>
+            <li>
+              <a class="menu-link" href="#about" data-text="about">about</a>
+            </li>
+            <li>
+              <a class="menu-link" href="#explore" data-text="explore"
+                >explore</a
+              >
+            </li>
+            <li>
+              <a class="menu-link" href="#news" data-text="news">news</a>
+            </li>
+            <li>
+              <a class="menu-link" href="#faq" data-text="faq">FAQ</a>
+            </li>
+          </ul>
+          <div class="footer-lang flex">
+            <span>Language:</span>
+            <div class="footer-lang__list">
+              <div class="footer-lang__curent">english</div>
+              <div class="footer-lang__content">
+                <div class="footer-lang__content-item">Ukrainian</div>
+                <div class="footer-lang__content-item">English</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-info">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel corrupti
+          quidem velit deleniti eligendi, qui numquam modi suscipit tempora
+          deserunt. Dolorem inventore dignissimos nemo similique cumque id
+          corporis magni nihil esse veritatis.
+        </div>
+        <div class="footer-icon">
+          <img src="./assets/images/pngfooterlogo.png" alt="" />
+        </div>
+        <div class="footer-year">2022</div>
+        <div class="footer-rights">
+          Developed by
+          <a href="https://github.com/SerheyZakrevskiy"
+            >One Wolf Mr.Serejka Zakrevskiy
+          </a>
+          .All rights reserved
+        </div>
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal-wrapper">
+        <div class="modal-title">The Wither 4</div>
+        <div class="modal-version"></div>
+        <form class="form">
+          <div class="form-group full">
+            <label for="card">Credit Card:</label>
+            <input
+              type="text"
+              required
+              placeholder="0000 0000 0000 0000"
+              id="card"
+            />
+          </div>
+          <div class="form-group">
+            <label for="expire">Expire:</label>
+            <input type="text" required placeholder="mm/yy" id="expire" />
+          </div>
+          <div class="form-group">
+            <label for="ccv">CCV:</label>
+            <input type="text" required placeholder="***" id="ccv" />
+          </div>
+          <div class="form-group full">
+            <label for="instant">Instant:</label>
+            <input type="text" required placeholder="" id="instant" />
+          </div>
+          <div class="form-checkbox flex flex-center">
+            <input type="checkox" name="agreement" id="agreement" required />
+            <span class="check"></span>
+            <label for="agreement">
+              I agree with the <span class="red">rules</span> of the site
+            </label>
+          </div>
+          <div class="modal-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
+            nemo suscipit illo magnam quod natus quaerat, harum temporibus
+            libero consequatur serejka lost promlem is very important blya Suka
+            Serejka
+          </div>
+          <div class="modal-total flex flex-center">
+            <div class="modal-total__text">YOUR TOTAL SUMMA:</div>
+            <div class="modal-total__price"></div>
+          </div>
+          <button type="submit" class="modal-submit buy-button">Buy now</button>
+        </form>
+        <div class="modal-close">x</div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </body>
+</html>
